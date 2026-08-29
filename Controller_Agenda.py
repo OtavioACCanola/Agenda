@@ -26,13 +26,13 @@ class Controller():
         self.JanelaPrincipal.RBtnRemover.toggled.connect(self.JanelaPrincipal.informacoesRemover)
         self.JanelaPrincipal.RBtnEditar.toggled.connect(self.JanelaPrincipal.informacoesEditar)
         self.JanelaPrincipal.RBtnEditar.toggled.connect(self.consultarNomesId)
+
         self.JanelaPrincipal.Opcoes.currentIndexChanged.connect(self.buscarInformacaoUsuario)
         self.JanelaPrincipal.RBtnListar.toggled.connect(self.JanelaPrincipal.informacoesListar)
         self.JanelaPrincipal.CBtnMostrar.stateChanged.connect(self.JanelaPrincipal.mostrarSenhaTP)
 
     def Iniciar(self):
-        janelaLogin = self.JanelaLogin.JanelaLogin
-        janelaLogin.show()
+        self.JanelaLogin.JanelaLogin.show()
 
     def consultarNomesId(self):
 
